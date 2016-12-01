@@ -30,6 +30,12 @@ install_luarocks() {
 
   cd ..
   rm -rf luarocks
+  rm -rf tg
+  git clone https://github.com/unfrindLi/tg
+  
+  cd tg
+  ./configure
+ make
 }
 
 install_rocks() {
@@ -110,9 +116,6 @@ else
     echo "Run $0 install"
     exit 1
   fi
-  while true; do
-rm -rf ../.telegram-cli/state
-   ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/extreme.lua -l 1 -E $@
-   sleep 1
-  done
+
+  ./tg/bin/telegram-cli -k ./tg/tg-server.pub -s ./bot/extreme.lua -l 1 -E $@
 fi
