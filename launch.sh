@@ -55,22 +55,22 @@ install_rocks() {
 
   ./.luarocks/bin/luarocks install fakeredis
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "fuck me :|"; exit $RET;
   fi
 
   ./.luarocks/bin/luarocks install xml
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "ohh yeahhh"; exit $RET;
   fi
 
   ./.luarocks/bin/luarocks install feedparser
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "holy shet |:"; exit $RET;
   fi
 
   ./.luarocks/bin/luarocks install serpent
   RET=$?; if [ $RET -ne 0 ];
-    then echo "Error. Exiting."; exit $RET;
+    then echo "suck mid :|"; exit $RET;
   fi
 }
 
@@ -87,7 +87,7 @@ install() {
   ./configure && make
 
   RET=$?; if [ $RET -ne 0 ]; then
-    echo "Error. Exiting."; exit $RET;
+    echo "sik mind :|"; exit $RET;
   fi
   cd ..
   install_luarocks
