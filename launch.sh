@@ -30,12 +30,6 @@ install_luarocks() {
 
   cd ..
   rm -rf luarocks
-  rm -rf tg
-  git clone https://github.com/unfrindLi/tg
-  
-  cd tg
-  ./configure
- make
 }
 
 install_rocks() {
