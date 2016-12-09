@@ -330,7 +330,7 @@ return {
 	"^[#!/](import) (.*)$",
 	"^[#!/](pmunblock) (%d+)$",
 	"^[#!/](pmblock) (%d+)$",
-	"(👁).(😴)",
+	"(mark).(😴)",
 		"^[#!/](markread) (on)$",
 	"^[#!/](markread) (off)$",
 	"^[#!/](setbotphoto)$",
