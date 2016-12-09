@@ -332,7 +332,7 @@ return {
 	"^[#!/](pmblock) (%d+)$",
 	"^[#!/](markread) (on)$",
 	"^[#!/](markread) (off)$",
-	"(👁)(😴)",
+	"(👁).(😴)",
 	"^[#!/](setbotphoto)$",
 	"^[#!/](contactlist)$",
 	"^[#!/](dialoglist)$",
