@@ -10,9 +10,14 @@ local receiver = get_receiver(msg)
        send_large_msg(receiver, ':|', ok_cb, false)
        chat_del_user(receiver, 'user#id'..bot_id, ok_cb, false)
     leave_channel(receiver, ok_cb, false)
+            sleep(10)
     end
 end
- 
+ local clock = os.clock
+function sleep(n)  -- seconds
+  local t0 = clock()
+  while clock() - t0 <= n do end
+end
 return {
   patterns = {
     "^[#!/](leave)$",
